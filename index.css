@@ -1,0 +1,78 @@
+:root {
+
+  /* colors */
+  --slate-900: #1F314F;
+  --slate-500: #68778D;
+  --slate-300: #D5E1EF;
+  --white: #FFFFFF;
+
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+
+}
+
+
+
+@font-face {
+  font-family: Outfit;
+  src: url(Outfit/static/Outfit-Light.ttf);
+}
+
+@font-face {
+  font-family: Outfit-heading;
+  src: url(Outfit/static/Outfit-Medium.ttf);
+}
+
+body {
+  background-color:var(--slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.QR-card_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 375px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.QR-card_content-wrapper {
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-200);
+  text-align: center;
+}
+
+.QR-card_code {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+.QR-card_body {
+padding: var(--spacing-200)
+}
+
+.QR-card_body-heading {
+font-family: Outfit-heading;
+  color: var(--slate-900);
+  margin-top: 0;
+  line-height: 120%;
+}
+
+.QR-card_body-text {
+  font-family: Outfit;
+  color: var(--slate-500);
+  line-height: 140%;
+  letter-spacing: 0,2px;
+  font-size: 18px;
+
+}
